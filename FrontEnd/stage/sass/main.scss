@@ -1,0 +1,96 @@
+//Colors
+$bg_dark : rgba(14, 9, 9, 0.808);
+$bg_white : rgb(253, 253, 253);
+$bg_blue : #5C90C4;
+$bg_green : rgba(21, 221, 71, 0.808);
+
+//Sizes
+$header_h : 20vh;
+$footer_h : 10vh;
+$main_h : 100vh - $header_h - $footer_h;
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: $bg_dark;
+    background-color: $bg_white;
+    header {
+        background-color: $bg_green;
+        // height: $header_h;
+    }
+    main {
+        min-height: $main_h;
+        width: 80%;
+        background-color: $bg_dark;
+        margin: auto;
+    }
+    footer {
+        background-color: $bg_blue;
+        height: $footer_h;
+    }
+}
+
+/* Helper Classes */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+.posts {
+
+}
+.feautured-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.post {
+    background-color: $bg_blue;
+    overflow: auto;
+    padding: 26px;
+}
+.post > img {
+    margin-right: 10px;
+}
+
+.first-post {
+    padding: 36px;
+    box-shadow: 0px 5px $bg_green;
+}
+
+.f_left {
+    float: left;
+}
+.f_right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+.relative {
+    position: relative;
+}
+
+.follow-us {
+    background-color: #78c45c;
+    height: max-content;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.space_vertical {
+    width: 100%;
+    height: 10px;
+}
+.space_horizontal {
+    width: 10px;
+}
